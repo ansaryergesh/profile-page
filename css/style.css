@@ -150,11 +150,32 @@ header {
     color: #7c7979;
     display: flex;
     justify-content: space-around;
+    box-shadow: 0px 35px 30px -30px #777;
     font-size: 16px; }
     .header-nav .social li {
       list-style: none;
       color: white;
-      margin-left: 2px; }
+      margin-left: 5px;
+      font-size: 20px;
+      box-shadow: 1px 1px 1px -1px rgba(0, 0, 0, 0.3);
+      padding: 5px 10px; }
+      .header-nav .social li a:hover {
+        -webkit-transition: all 600ms cubic-bezier(0.99, 0, 0.57, 0.94);
+        -moz-transition: all 600ms cubic-bezier(0.99, 0, 0.57, 0.94);
+        -ms-transition: all 600ms cubic-bezier(0.99, 0, 0.57, 0.94);
+        -o-transition: all 600ms cubic-bezier(0.99, 0, 0.57, 0.94);
+        transition: all 600ms cubic-bezier(0.99, 0, 0.57, 0.94);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); }
+      .header-nav .social li .fa-facebook:hover {
+        color: #4867AA; }
+      .header-nav .social li .fa-twitter:hover {
+        color: #51d1ff; }
+      .header-nav .social li .fa-github:hover {
+        color: #080808; }
+      .header-nav .social li .fa-linkedin:hover {
+        color: #4235f3; }
 
 main {
   padding: 100px; }
@@ -171,7 +192,7 @@ main {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
-  border-left: 5px solid white; }
+  border-left: 3px solid white; }
   .heading-primary--main {
     margin-left: 12px;
     font-size: 4rem;
@@ -195,6 +216,7 @@ main {
   transform: translate(-60%, -60%); }
 
 .btn-contact {
+  cursor: pointer;
   border-radius: 15px;
   background-color: transparent;
   color: #fdb499;
